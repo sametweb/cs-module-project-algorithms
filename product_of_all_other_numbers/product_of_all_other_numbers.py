@@ -2,11 +2,22 @@
 Input: a List of integers
 Returns: a List of integers
 '''
+
+def create_eval(i, product):
+    product = product.split('*')
+    del product[i]
+    product = "*".join(product)
+
+    return product
+    
+
 def product_of_all_other_numbers(arr):
-    # Your code here
+    product = '*'.join([str(num) for num in arr])
 
-    pass
+    for i in range(len(arr)):
+        arr[i] = create_eval(i, product)
 
+    return [eval(item) for item in arr]
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
