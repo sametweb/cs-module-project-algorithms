@@ -3,6 +3,9 @@ Input: a List of integers
 Returns: a List of integers
 '''
 
+def product_of_all_other_numbers(arr):
+
+# # First solution I came up with
 def create_eval(i, product):
     product = product.split('*')
     del product[i]

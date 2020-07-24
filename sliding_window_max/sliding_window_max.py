@@ -4,7 +4,6 @@ Returns: a List of integers
 '''
 
 
-        
     
 # # Naive Solution
 def find_max(arr):
